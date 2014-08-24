@@ -1,0 +1,9 @@
+Final Project Description
+===============================================================================
+
+Use term project files. There you will have a dataset and an R script to do RSiena simualtions.
+The first part of the file is code snippets, which I have used during the lecture.
+The second part is a simple stream of analysis for your project.
+This simple sample imports the data and examines co-evolution of leisure friendship network and gpa performance.
+I expect that each one of you comes up with an original model and along with discussion of its results.
+So as part of the project. Submit your code and a short report discussing your model and its results.

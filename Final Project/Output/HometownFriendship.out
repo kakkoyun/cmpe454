@@ -1,0 +1,90 @@
+
+
+-----------------------------------
+New Analysis started.
+Date and time: 05/06/2013 14:58:12
+New results follow.
+-----------------------------------
+
+Siena version 1.1-212 (29 Mar 12) R-forge revision: 212 
+
+@1
+Estimation by stochastic approximation algorithm.
+=================================================
+
+Random initialization of random number stream.
+Current random number seed is 865406.
+Effects object used: hometownCoEvolutionEff 
+Model Type 1: Standard actor-oriented model
+Estimation method: conditional moment estimation
+Conditioning variable is the total number of observed changes ("distance") 
+in the network variable.
+Distances for simulations are
+period   :   1   2
+distance :   28  28.
+Standard errors are estimated with the likelihood ratio method.
+Initial value of gain parameter is  0.2000000.
+Number of subphases in Phase 2 is 4.
+
+Initial parameter values are 
+  0.1  Rate parameter                         3.7311
+  0.2  Rate parameter                         3.7311
+  1. eval:  outdegree (density)                            -1.1012
+  2. eval:  reciprocity                                     0.0000
+
+
+Observed values of target statistics are
+  1. Number of ties                                                      52.0000
+  2. Number of reciprocated ties                                         32.0000
+
+ 2 parameters, 2 statistics
+
+Estimation of derivatives by the LR method (type 1).
+
+@2
+End of stochastic approximation algorithm, phase 3.
+---------------------------------------------------
+
+Total of 1575 iterations.
+Parameter estimates based on 575 iterations,
+basic rate parameters as well as 
+convergence diagnostics, covariance and derivative matrices based on 1000 iterations.
+
+Information for convergence diagnosis.
+Averages, standard deviations, and t-ratios for deviations from targets:
+  1.   0.8840   6.9220   0.1277 
+  2.   0.2180   6.6946   0.0326 
+
+Good convergence is indicated by the t-ratios being close to zero.
+
+
+@2
+Estimation Results.
+-------------------
+
+Regular end of estimation algorithm.
+Total of 1575 iteration steps.
+
+@3
+Estimates and standard errors
+                             
+Rate parameters:
+ 0.1  Rate parameter period 1                 4.0431  (   1.1257)
+ 0.2  Rate parameter period 2                 4.0217  (   1.2190)
+
+Other parameters:
+ 1. eval:  outdegree (density)                          -1.9611  (   0.2452)
+ 2. eval:  reciprocity                                   2.1849  (   0.4119)
+
+@3
+Covariance matrices
+                   
+Covariance matrix of estimates (correlations below diagonal):
+     0.060     -0.079
+    -0.786      0.170
+
+Derivative matrix of expected statistics X by parameters and
+covariance/correlation matrix of X can be found using
+summary(ans) within R, or by using the 'verbose' option in Siena07.
+ 
+Total computation time 1.59 seconds.

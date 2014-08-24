@@ -1,0 +1,90 @@
+
+%%% Preamble
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}	% Article class of KOMA-script with 11pt font and a4 format
+\usepackage[T1]{fontenc}
+
+\usepackage{fourier}
+
+\usepackage[english]{babel}															% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}				% Better typography
+\usepackage{amsmath,amsfonts,amsthm}										% Math packages
+\usepackage[pdftex]{graphicx}														% Enable pdflatex
+\usepackage{url}
+
+
+%%% Custom sectioning (sectsty package)
+\usepackage{sectsty}												% Custom sectioning (see below)
+\allsectionsfont{\centering \normalfont\scshape}	% Change font of al section commands
+
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}														% No page header
+
+\fancyfoot[C]{}													% Empty
+\fancyfoot[R]{\thepage}									% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}			% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\title{
+		%\vspace{-1in} 	
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{Computer Science Department, Istanbul Bilgi University} \\ [25pt]
+		\horrule{0.5pt} \\[0.4cm]
+		\huge Dynamic Social Network Analysis \\
+		\horrule{2pt} \\[0.5cm]
+}
+\author{
+		\normalfont 								\normalsize
+        Kemal Akkoyun\\[-3pt]		\normalsize
+        \today
+}
+\date{}
+
+
+%%% Begin document
+\begin{document}
+\maketitle
+\section{Network Analysis}
+The network created with given values of friendship between students in years 2010, 2011 and 2012. These friendship values stand as a two dimentional matrices. This matrices contains binary values; 0 represents not friend and 1 represents friending students.
+
+Also with obtaining the given attributes files such as gender, gpa values and hometowns, the simulation created. Gender values are binary; 0 for male students and 1 for females. Gpa values are grades of the students for each year as three columns. Different hometowns represented as different numbers in the given data file.
+
+The given data files includes 16 students' attributes and friendship situations for every year.
+
+\subsection{Generated Simulations}
+Gender and hometown included to the simulation as constant actor covariates and GPA as time-varying actors. As an example simulation, we have the friendship, gender, GPA performance evaluation of the students. 
+
+There also have been created the three simulation models between friendship-hometown relations, friendship-GPA performances, friendship-hometown-GPA performances.
+
+\subsection{Generated Graphs}
+With using the friendship values of students there also examined the out-degree values of friendship graph and the GPA relation of the years 2010 and 2011. The result of the 2012 has not been included because of the higher P-value means inconsistent results.
+
+There are two types of graphs,
+\begin{itemize}
+\item In-degree Graphs
+\paragraph{} The nodes of the graphs labeled with colorized labels with blue and pink for gendering the nodes and these labels contains the GPA value of students. The vertex sizes determined with the ratio of the in-degree value of each nodes.
+\item In-degree Component Graphs
+\paragraph{} In component graphs as an additional feature of the previously explained in-degree graphs, the friendship relations of different groups colorized with different colors.
+\end{itemize}
+
+\subsection{Conclusion}
+In the simulations and graphs, we see that the students who have higher GPA values, claim that they have much more friends then the students who have lower GPA's. The socializing values of the successful students increases also from 2010 to 2011. 
+
+We obtain that the GPA values of students in year 2012, are not related with the gender from the generated graphs. And also we see that between simulations of friendship-GPA performances, friendship-gender-GPA performances. The gender of the students also does not affect the GPA's and the relationships between students.
+
+In the hometown and friendship simulation we see that the students who are from the same hometown become unfriend with a smaller ratio from 2010 to 2012. As a conclusion we stand that the students feel much friendly with their hometown mates and this friendships changes insignificantly. 
+
+%%% End document
+\end{document}

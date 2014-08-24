@@ -1,0 +1,112 @@
+
+
+-----------------------------------
+New Analysis started.
+Date and time: 05/06/2013 14:58:14
+New results follow.
+-----------------------------------
+
+Siena version 1.1-212 (29 Mar 12) R-forge revision: 212
+
+@1
+Estimation by stochastic approximation algorithm.
+=================================================
+
+Random initialization of random number stream.
+Current random number seed is 21052.
+Effects object used: gpaCoEvolutionEff
+Model Type 1: Standard actor-oriented model
+Estimation method: unconditional moment estimation.
+
+Time duration for simulations in each period is 1.0.
+Standard errors are estimated with the likelihood ratio method.
+Initial value of gain parameter is  0.2000000.
+Number of subphases in Phase 2 is 4.
+
+Initial parameter values are
+  1. rate:  constant friendship rate (period 1)             3.7311
+  2. rate:  constant friendship rate (period 2)             3.7311
+  3. eval:  outdegree (density)                            -1.1012
+  4. eval:  reciprocity                                     0.0000
+  5. rate:  rate gpa.performance (period 1)                 0.2250
+  6. rate:  rate gpa.performance (period 2)                 0.3500
+  7. eval:  behavior gpa.performance linear shape           0.0000
+  8. eval:  behavior gpa.performance quadratic shape        0.0000
+
+
+Observed values of target statistics are
+  1. Amount of network change in period 1                                28.0000
+  2. Amount of network change in period 2                                28.0000
+  3. Number of ties                                                      52.0000
+  4. Number of reciprocated ties                                         32.0000
+  5. Amount of behavioral change in period 1 on gpa.performance           2.0000
+  6. Amount of behavioral change in period 2 on gpa.performance           5.0000
+  7. beh. gpa.performance cent. sum                                      -1.0000
+  8. beh. gpa.performance sum of cent. squares                           17.2500
+
+ 8 parameters, 8 statistics
+
+Estimation of derivatives by the LR method (type 1).
+
+@2
+End of stochastic approximation algorithm, phase 3.
+---------------------------------------------------
+
+Total of 2784 iterations.
+Parameter estimates based on 1784 iterations,
+convergence diagnostics, covariance and derivative matrices based on 1000 iterations.
+
+Information for convergence diagnosis.
+Averages, standard deviations, and t-ratios for deviations from targets:
+  1.   0.0150   4.4635   0.0034
+  2.  -0.0510   4.4018  -0.0116
+  3.   0.2360   7.1373   0.0331
+  4.   0.0600   6.8225   0.0088
+  5.  -0.0240   1.3443  -0.0179
+  6.  -0.0860   1.9184  -0.0448
+  7.   0.1560   2.5362   0.0615
+  8.   0.0795   2.3070   0.0345
+
+Good convergence is indicated by the t-ratios being close to zero.
+
+
+@2
+Estimation Results.
+-------------------
+
+Regular end of estimation algorithm.
+Total of 2784 iteration steps.
+
+@3
+Estimates and standard errors
+
+Network Dynamics
+ 1. rate:  constant friendship rate (period 1)           4.1216  (   1.0765)
+ 2. rate:  constant friendship rate (period 2)           4.2364  (   1.2141)
+ 3. eval:  outdegree (density)                          -1.9257  (   0.2379)
+ 4. eval:  reciprocity                                   2.1237  (   0.3862)
+
+Behavior Dynamics
+ 5. rate:  rate gpa.performance (period 1)               0.2148  (   0.1587)
+ 6. rate:  rate gpa.performance (period 2)               0.6936  (   0.3907)
+ 7. eval:  behavior gpa.performance linear shape        -0.9195  (   1.5001)
+ 8. eval:  behavior gpa.performance quadratic shape     -1.5497  (   2.2740)
+
+@3
+Covariance matrices
+
+Covariance matrix of estimates (correlations below diagonal):
+     1.159     -0.028      0.008      0.021      0.024      0.013     -0.080     -0.113
+    -0.021      1.474      0.000      0.025     -0.007     -0.017     -0.002      0.015
+     0.033     -0.001      0.057     -0.073      0.000     -0.007     -0.010     -0.006
+     0.052      0.052     -0.794      0.149      0.002      0.010      0.006      0.003
+     0.140     -0.034     -0.006      0.034      0.025      0.002      0.013     -0.002
+     0.030     -0.036     -0.072      0.069      0.032      0.153     -0.027     -0.106
+    -0.050     -0.001     -0.028      0.011      0.055     -0.046      2.250      2.905
+    -0.046      0.005     -0.012      0.004     -0.005     -0.119      0.851      5.171
+
+Derivative matrix of expected statistics X by parameters and
+covariance/correlation matrix of X can be found using
+summary(ans) within R, or by using the 'verbose' option in Siena07.
+
+Total computation time 2.83 seconds.
